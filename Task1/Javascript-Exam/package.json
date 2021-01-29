@@ -1,0 +1,21 @@
+{
+  "name": "exam-2020",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "nodes": "node ./public/js/matrix.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

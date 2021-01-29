@@ -1,0 +1,188 @@
+#cy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 auto;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.inStoreNav {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: 0;
+}
+
+.inStoreNavActions {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 270px;
+  min-width: 270px;
+  max-width: 270px;
+  border-right: 1px solid #dddddd;
+  padding: 15px 6px 30px 15px;
+  background: #fafbfc;
+  position: relative;
+}
+
+.inStoreNavActions .inStoreNavActionsPanel {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 500px;  
+}
+
+h1 {
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.actionButtons {
+  text-align: left;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  background: #007bff;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+button + button {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background: #0069d9;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+select {
+  border-radius: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  padding: 10px 25px 10px 15px;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU1LjIgKDc4MTgxKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5hcnJvdyBkb3duPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9ImFycm93LWRvd24iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGQ9Ik0yNy44MjczMTg2LDkuMzY2OTE3NTYgTDE2Ljg5NjU1OTQsMjAuMTI1OTczMyBDMTYuMzk3OTM2NCwyMC42MTY3NjM5IDE1LjYwMzMxNSwyMC42MTc5OTU1IDE1LjEwMzQ0MDYsMjAuMTI1OTczMyBMNC4xNzI2ODEzNiw5LjM2NjkxNzU2IEMzLjY3NTY1MDQ0LDguODc3Njk0MTUgMi44Njk4MDQxLDguODc3Njk0MTUgMi4zNzI3NzMxOSw5LjM2NjkxNzU2IEMxLjg3NTc0MjI3LDkuODU2MTQwOTcgMS44NzU3NDIyNywxMC42NDkzMjg4IDIuMzcyNzczMTksMTEuMTM4NTUyMyBMMTMuMzAzNTMyNCwyMS44OTc2MDggQzE0Ljc5ODczOTksMjMuMzY5MzI4MyAxNy4yMDUwNDk1LDIzLjM2NTU5ODUgMTguNjk2NDY3NiwyMS44OTc2MDggTDI5LjYyNzIyNjgsMTEuMTM4NTUyMyBDMzAuMTI0MjU3NywxMC42NDkzMjg4IDMwLjEyNDI1NzcsOS44NTYxNDA5NyAyOS42MjcyMjY4LDkuMzY2OTE3NTYgQzI5LjEzMDE5NTksOC44Nzc2OTQxNSAyOC4zMjQzNDk2LDguODc3Njk0MTUgMjcuODI3MzE4Niw5LjM2NjkxNzU2IFoiIGlkPSLihrPwn4yILUNvbG9yIiBmaWxsPSIjMzQzNzQxIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 97% 10px;
+}
+
+.bottomButtons {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  z-index: 9;
+}
+
+button.deleteButton {
+    
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    color: #222222;
+    border-radius: 50%; 
+    cursor: pointer;
+    padding: 3px 5px 5px;
+    line-height: 1;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+}
+
+button.deleteButton:hover,
+button.deleteButton:focus,
+button.deleteButton:active {
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  color: #222222;
+  box-shadow: none;
+  outline: 0;
+}
+
+button.searchButton {
+  margin-bottom: 20px;
+}
+
+.inStoreNavlayout {  
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 700px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.inStoreNavlayoutPanel {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 400px;
+  /* background: url(./store1.png) 0 0 no-repeat; */
+  background-size: auto 100%;
+}
+
+.categories {
+  padding: 0 0 20px;
+  flex: 1 0 300px;
+  overflow-y: auto;
+}
+.categories .checkBoxRow {
+  padding: 5px 0;
+}
+
+.categories .checkBoxRow input[type=checkbox] {
+  display: inline-block;
+  vertical-align: middle;
+  margin:0 10px 0 0;
+  transform: translateY(-2px);
+}
+
+.categories .checkBoxRow label {
+  display: inline-block;
+  vertical-align: middle;
+}
